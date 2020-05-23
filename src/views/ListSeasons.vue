@@ -98,13 +98,7 @@ export default {
     width: 110px;
     height: 43px;
     border-image: 0px;
-}
-
-@media (min-width: 800px) {
- .logo {
-    width: 140px;
-    height: 53px;
-  }
+    padding: 0px 4px;
 }
 
 .welcome {
