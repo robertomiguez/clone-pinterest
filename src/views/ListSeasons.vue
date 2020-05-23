@@ -95,15 +95,18 @@ export default {
 }
 
 .logo {
+    width: 110px;
+    height: 43px;
+    border-image: 0px;
+}
+
+@media (min-width: 800px) {
+ .logo {
     width: 140px;
     height: 53px;
-    border-image: 0px;
+  }
 }
-.logo-central {
-    width: 500px;
-    height: 120px;
-    border-image: 0px;
-}
+
 .welcome {
     display: flex;
     flex-direction: column;
