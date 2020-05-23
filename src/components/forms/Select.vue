@@ -12,8 +12,6 @@ export default {
   name: 'SelectSeason',
   methods: {
     onChange (event) {
-      console.log(event.target.value)
-      console.log(Boolean(event.target.value))
       if (event.target.value) this.$emit('selected', event.target.value)
     }
   },
@@ -28,11 +26,11 @@ export default {
 
 <style>
 .select-css {
-    display: block;
+    /* display: block; */
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: monospace;
     font-weight: 700;
-    color: #444;
+    color: #032f5eb3;
     line-height: 1.3;
     padding: .6em 1.4em .5em .8em;
     width: 100%;
@@ -60,9 +58,9 @@ export default {
 }
 .select-css:focus {
     border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 1px 3px #3b99fcb3;
     box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222;
+    color: #032f5eb3;
     outline: none;
 }
 .select-css option {
