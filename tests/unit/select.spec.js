@@ -20,11 +20,8 @@ afterEach(() => {
 
 describe('Card', () => {
   test('testing component props', () => {
-    expect(wrapper.find('.select-css').text())
-      .toBe(`Select one 
-        op1
-    
-        op2`)
+    expect(wrapper.find('.select-css').text().replace(/\s+/g,' '))
+      .toBe(`Select one op1 op2`)
   })
 
   test('regression test', () => {
